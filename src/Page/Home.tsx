@@ -16,12 +16,9 @@ const Home = () => {
         <h1 className="text-2xl md:text-4xl lg:text-5xl tracking-widest opacity-80 font-medium hero-fade fade-delay-3">
           HI, I'M
         </h1>
-        <h1
-          className="text-5xl md:text-7xl lg:text-9xl font-extrabold lg:text-transparent 
-        lg:tracking-tighter font-bebas "
-        >
-          LEOSE ELDHO
-        </h1>
+        <h1 className="text-4xl md:text-7xl lg:text-9xl font-extrabold lg:text-transparent 
+        lg:[-webkit-text-stroke:2px_black] dark:lg:[-webkit-text-stroke:2px_white] 
+        lg:tracking-tighter font-bebas hero-fade fade-delay-4">LEOSE ELDHO</h1>
         <h4 className="text-lg md:text-2xl text-gray-700 dark:text-gray-300 font-bebas font-bold hero-fade fade-delay-5">
           Full STACK DEVELOPER
         </h4>

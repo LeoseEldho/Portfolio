@@ -1,2 +1,18 @@
 @import "tailwindcss";
 
+@keyframes MoveX {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@keyframes MoveY {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translatex(100%);
+  }
+}
