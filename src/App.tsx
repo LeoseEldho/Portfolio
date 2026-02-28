@@ -1,7 +1,12 @@
 import './App.css'
-import Home from './Page/Home';
+import Home from './Component/Home';
 import About from './Page/About';
+import Contact from './Page/Contact';
 import Details from './Page/Details';
+import Education from './Page/Education';
+import Experience from './Page/Experience';
+import Footer from './Page/Footer';
+import Skill from './Page/Skill';
 
 function App() {
 
@@ -10,7 +15,12 @@ function App() {
     <div className='bg-gray-100 dark:bg-slate-950'>
       <Home></Home>
       <Details/>
-      <About/>
+      <About />
+      <Education />
+      <Skill />
+      <Experience />
+      <Contact/>
+      <Footer/>
     </div>
   )
 }
