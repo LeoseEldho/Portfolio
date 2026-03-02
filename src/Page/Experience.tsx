@@ -1,3 +1,5 @@
+import vonnue from '../assets/vonnue/webverse_logo.png'
+
 const Experience = () => {
   return (
     <section id="experience" className="px-6 md:px-20 py-16 md:py-24">
@@ -8,7 +10,7 @@ const Experience = () => {
         <div className="group relative p-10 rounded-3xl bg-gray-800 shadow-lg overflow-hidden transition-all duration-300 opacity-100 scale-100">
           <div className="relative z-10 space-y-4">
             <div className="flex justify-between items-center gap-6">
-              <img src="src\assets\vonnue\webverse_logo.png" alt="" />
+              <img src={vonnue} alt="vonnue" />
               <p className="  font-semibold text-gray-200 text-2xl sm:text-4xl md:text-6xl">
                 Fullstack Developer Intern
               </p>
