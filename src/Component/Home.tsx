@@ -6,7 +6,7 @@ const Home = () => {
       id="home"
       className="relative min-h-screen flex flex-col px-6 md:px-20 pt-14 bg-linear-to-b  from-gray-800 via-gray-900 to-black text-gray-100 transition-colors duration-300"
     >
-      <div className="absolute z-100 bottom-10 left-[43%] flex flex-col items-center gap-2">
+      {/* <div className="absolute z-100 bottom-10 left-[43%] flex flex-col items-center gap-2">
         <span className="text-xs tracking-[0.3em] text-gray-200">SCROLL</span>
         <div className="w-6 h-10 border-2 border-gray-200 rounded-full flex justify-center overflow-hidden">
           <span
@@ -16,19 +16,13 @@ const Home = () => {
             }}
           ></span>
         </div>
-      </div>
+      </div> */}
       <div className="text-center space-y-2 flex-1 flex flex-col justify-end hero-fade fade-delay-2">
-        <h1 className="text-2xl md:text-4xl lg:text-5xl tracking-widest opacity-80 font-medium hero-fade fade-delay-3">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl tracking-widest opacity-80 font-medium hero-fade fade-delay-3 uppercase">
           Hi, I’m 
         </h1>
-        <h1
-          className="text-5xl md:text-8xl lg:text-9xl font-extrabold lg:text-transparent 
-        lg:[-webkit-text-stroke:2px_white] 
-        lg:tracking-tighter font-bebas hero-fade fade-delay-4"
-        >
-          LEOSE ELDHO
-        </h1>
-        <h4 className="text-lg md:text-3xl text-gray-300 font-bebas font-bold hero-fade fade-delay-5">
+        <h1 className="text-5xl md:text-7xl lg:text-9xl font-extrabold [-webkit-text-stroke:1px_white] text-transparent lg:[-webkit-text-stroke:2px_white] tracking-wide  lg:tracking-tighter font-bebas hero-fade fade-delay-4 uppercase whitespace-nowrap">leose eldho</h1>
+        <h4 className="text-lg md:text-3xl text-gray-300 font-bebas font-bold hero-fade fade-delay-5 uppercase">
           <Typewriter
             words={[
               "Full Stack Developer",
@@ -48,10 +42,10 @@ const Home = () => {
 
       <div className=" flex flex-col flex-1 mt-8 lg:hidden">
         <div className="flex items-center gap-4 mt-6 justify-center">
-          <button className="flex items-center w-40 h-12 justify-center cursor-pointer bg-gray-400/10 backdrop-blur-2xl text-white rounded-full">
+          <button className="flex items-center w-40 h-12 justify-center cursor-pointer bg-gray-400/10 backdrop-blur-2xl text-white rounded-full transition-all duration-500 hover:translate-y-1">
            <a href="#contact"> Let’s connect</a>
           </button>
-          <button className="flex items-center w-40 h-12 justify-center cursor-pointer bg-white/70 backdrop-blur-2xl text-white rounded-full">
+          <button className="flex items-center w-40 h-12 justify-center cursor-pointer bg-white/70 backdrop-blur-2xl text-white rounded-full transition-all duration-500 hover:translate-y-1">
             Download CV
           </button>
         </div>
@@ -72,8 +66,8 @@ const Home = () => {
           </p>
           <div className="w-20 h-1 bg-gray-200 rounded-full"></div>
           <div className="relative w-40 h-12 flex items-center justify-center group cursor-pointer">
-            <span className="absolute bottom-[-40%] w-24 h-16 rounded-full bg-white/40 blur-2xl transition-opacity duration-300 group-hover:opacity-60 dark:group-hover:opacity-70 "></span>
-            <button className="relative w-full h-full rounded-xl bg-gray-400/10 backdrop-blur-2xl text-white border border-white/30 shadow-[inset_0_-4px_18px_rgba(0,0,0,0.18)] dark:shadow-[inset_0_-3px_15px_rgba(255,255,255,0.35)] transition-all duration-200 group-hover:translate-y-1 active:translate-y-2 cursor-pointer">
+            <span className="absolute bottom-[-40%] w-24 h-16 rounded-full bg-white/40 blur-2xl transition-opacity duration-300 group-hover:opacity-70 "></span>
+            <button className="relative w-full h-full rounded-xl bg-gray-400/10 backdrop-blur-2xl text-white border border-white/30 shadow-[inset_0_-3px_15px_rgba(255,255,255,0.35)] transition-all duration-200 group-hover:translate-y-1 active:translate-y-2 cursor-pointer">
              <a href="#contact"> Let’s connect</a>
             </button>
           </div>
@@ -91,8 +85,8 @@ const Home = () => {
           </p>
           <div className="w-20 h-1 bg-gray-200 rounded-full"></div>
           <div className="relative group cursor-pointer">
-            <span className="absolute -bottom-5 left-1/2 -translate-x-1/2 w-28 h-14 rounded-full bg-black/30 blur-2xl transition-opacity duration-300 group-hover:opacity-70 dark:group-hover:opacity-60"></span>
-            <button className="relative px-6 py-2 rounded-full bg-white/70 backdrop-blur-2xl text-gray-900 border border-gray-300/60 shadow-[inset_0_-4px_18px_rgba(255,255,255,0.12)] dark:shadow-[inset_0_-4px_18px_rgba(0,0,0,0.15)] transition-all duration-200 group-hover:translate-y-1 active:translate-y-2 cursor-pointer">
+            <span className="absolute -bottom-5 left-1/2 -translate-x-1/2 w-28 h-14 rounded-full bg-black/30 blur-2xl transition-opacity duration-300 group-hover:opacity-60"></span>
+            <button className="relative px-6 py-2 rounded-full bg-white/70 backdrop-blur-2xl text-gray-900 border border-gray-300/60 shadow-[inset_0_-4px_18px_rgba(0,0,0,0.15)] transition-all duration-200 group-hover:translate-y-1 active:translate-y-2 cursor-pointer">
               <a href="src\assets\Resume\LeoseEldho_Resume.pdf">Download CV</a>
             </button>
           </div>

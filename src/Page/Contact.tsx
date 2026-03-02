@@ -19,12 +19,12 @@ const Contact = () => {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(() => {
-        toast.success("Message sent successfully 🚀");
+        toast.success("Message sent successfully");
         formRef.current?.reset();
       })
       .catch((error) => {
         console.error(error);
-        toast.error("Failed to send message ❌");
+        toast.error("Failed to send message");
       });
   };
 
@@ -33,10 +33,10 @@ const Contact = () => {
     <section id="contact" className="px-6 md:px-20 py-16 md:py-24">
       <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-16 items-center">
         <div className="transition-all duration-800 opacity-100 translate-x-0">
-          <h2 className="text-4xl md:text-6xl lg:text-8xl font-extrabold font-bebas text-gray-800 dark:text-gray-200 mb-6 uppercase">
+          <h2 className="text-4xl md:text-6xl lg:text-8xl font-extrabold font-bebas text-gray-200 mb-6 uppercase">
             Get In Touch
           </h2>
-          <p className="text-lg text-gray-800 dark:text-gray-400 leading-relaxed mb-6">
+          <p className="text-lg text-gray-400 leading-relaxed mb-6">
             Have a project idea, collaboration, or opportunity in mind? Feel
             free to reach out — I’d love to connect with you.
           </p>
@@ -63,7 +63,7 @@ const Contact = () => {
     text-white outline-none
     focus:border-sky-400 transition"
             type="text"
-            name="name"
+            name="user_name"
           ></input>
           <input
             placeholder="Enter Your Email"
@@ -73,11 +73,11 @@ const Contact = () => {
     border border-white/30
     text-white outline-none
     focus:border-sky-400 transition"
-            type="text"
-            name="name"
+            type="email"
+            name="user_email"
           ></input>
           <textarea
-            name=""
+            name="message"
             className="peer w-full  px-4 py-5   rounded-2xl 
     bg-white/10 backdrop-blur-lg
     border border-white/30
@@ -87,6 +87,7 @@ const Contact = () => {
             id=""
           ></textarea>
           <button
+            
             type="submit"
             className="w-full h-full rounded-xl bg-white/70  p-4
               text-gray-900 font-semibold border

@@ -19,7 +19,7 @@ const Skill = () => {
         border-white/20
         shadow-[0_30px_60px_rgba(0,0,0,0.25)]
         transition-transform duration-200 ease-out
-        will-change-transform cursor-pointer text-gray-200
+        will-change-transform cursor-pointer text-gray-200 hover:translate-y-2 duration-700 
       "
             >
               <div className="pointer-events-none absolute  inset-0 transition duration-100"></div>

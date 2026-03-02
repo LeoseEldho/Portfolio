@@ -11,7 +11,7 @@ const Project = () => {
           {/* map */}
           {project.map((x) => (
             <div className="rounded-3xl bg-gray-800 transition-all duration-500 translate-y-0 opacity-100 overflow-hidden">
-              <div className="h-64 sm:h-72 md:h-80 lg:h-150  ">
+              <div className="h-64 sm:h-72 md:h-80 lg:h-150  transition-transform duration-500 hover:scale-105">
                 <img className="w-full object-cover h-full" src={x.image} alt="" />
               </div>
               <div className="p-8 space-y-4">

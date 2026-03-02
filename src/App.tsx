@@ -14,7 +14,7 @@ function App() {
 
 
   return (
-    <div className='bg-gray-100 dark:bg-slate-950'>
+    <div className='bg-slate-950'>
       <ToastContainer/>
       <Home></Home>
       <Details/>

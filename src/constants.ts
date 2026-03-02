@@ -9,44 +9,44 @@ import tailwind from "./assets/logo/Tailwind CSS.svg";
 import bootstrap from "./assets/logo/bootstrap.png";
 import css from "./assets/logo/css.png";
 import node from "./assets/logo/nodejs.png";
-import doordash from "./assets/Project/Doordash.png"; 
-import tripAdvisor from './assets/Project/tripadvisor.png';
-import croma from './assets/Project/croma.png';
-import movie from './assets/Project/movie.png'
-import flipkart from './assets/Project/filpkart.png';
-import loginPage from './assets/Project/LoginPage.png'
-import whatapp from './assets/logo/whatsapp-svgrepo-com.png'
+import doordash from "./assets/Project/Doordash.png";
+import tripAdvisor from "./assets/Project/tripadvisor.png";
+import croma from "./assets/Project/croma.png";
+import movie from "./assets/Project/movie.png";
+import flipkart from "./assets/Project/filpkart.png";
+import loginPage from "./assets/Project/LoginPage.png";
+import whatapp from "./assets/logo/whatsapp-svgrepo-com.png";
 
 export const details = [
   {
     title: "About Me",
     click: "Click to open section",
-    id:"about"
+    id: "about",
   },
   {
     title: "Education",
     click: "Click to open section",
-    id:"education"
+    id: "education",
   },
   {
     title: "Skills",
     click: "Click to open section",
-    id:"skill"
+    id: "skill",
   },
   {
     title: "Experience",
     click: "Click to open section",
-    id:"experience"
+    id: "experience",
   },
   {
     title: "Projects",
     click: "Click to open section",
-    id:"project"
+    id: "project",
   },
   {
     title: "Contact",
     click: "Click to open section",
-    id:"contact"
+    id: "contact",
   },
 ];
 export const education = [
@@ -136,43 +136,58 @@ export const project = [
     image: doordash,
     name: "DoorDash",
     details:
-      "A pixel-perfect and fully responsive DoorDash homepage replica built using pure HTML and CSS. The design closely mirrors the original with precise layout and styling.",
+      "A fully responsive, pixel-perfect DoorDash homepage clone created using only HTML and CSS. The project emphasizes precise layout, clean styling, and real-world UI replication, showcasing my front-end fundamentals and design accuracy.",
     stack: ["HTML", "CSS", "Responsive Design"],
     link: "https://doordash-clone-indol.vercel.app",
   },
   {
     image: tripAdvisor,
     name: "TripAdvisor",
-    details: "",
+    details:
+      "A pixel-perfect and fully responsive replica of the TripAdvisor homepage, built using pure HTML and CSS. The project closely mirrors the original design with precise layout, spacing, typography, and visual structure. It demonstrates strong attention to detail and the ability to recreate complex, real-world UIs without using any CSS frameworks.",
     stack: ["HTML", "CSS", "Responsive Design"],
     link: "https://trip-advisor-kappa-indol.vercel.app",
   },
   {
     image: croma,
     name: "Croma",
-    details: "",
-    stack: ["HTML", "CSS", "Responsive Design"],
+    details:
+      "A fully responsive clone of the Croma e-commerce website built using HTML, CSS, and JavaScript. The project features dynamic product rendering using JSON data, interactive UI components, and responsive layouts for seamless viewing across devices. It demonstrates practical front-end development skills, DOM manipulation, and handling real-world e-commerce style interfaces without relying on frameworks.",
+    stack: ["HTML", "CSS", "javaScript", "Responsive Design", "JSON"],
     link: "https://croma-leose.vercel.app",
   },
   {
     image: movie,
     name: "Movie Site",
-    details: "",
-    stack: ["HTML", "CSS", "Responsive Design"],
+    details:
+      "A fully responsive movie browsing application built using React and CSS, powered by the TMDB API. The app allows users to explore popular movies, search for specific titles, and manage a favorites list using React Context API with persistent storage via localStorage. This project demonstrates practical experience with API integration, global state management, component-based architecture, and responsive UI design.",
+    stack: ["React", "CSS", "API", "Responsive Design", "LocalStorage"],
     link: "https://movie-site-dmh2.vercel.app",
   },
   {
     image: flipkart,
     name: "Flipkart",
-    details: "",
-    stack: ["HTML", "CSS", "Responsive Design"],
+    details:
+      "A responsive Flipkart-inspired e-commerce UI built using React and CSS. The project follows a component-based architecture and implements dynamic product rendering using JSON data. It includes interactive features such as product filtering and sorting to enhance user experience, along with fully responsive layouts for different screen sizes. This project demonstrates strong front-end fundamentals, reusable components, state management, and real-world e-commerce page structure.",
+    stack: ["React", "CSS", "Responsive Design", "JSON"],
     link: "https://react-flipkart-3qrn.vercel.app",
-    },
+  },
   {
     image: loginPage,
-    name: "Login Page",
-    details: "",
-    stack: ["HTML", "CSS", "Responsive Design"],
+    name: "Authentication System",
+    details:
+      "A secure full-stack authentication system built using React, Tailwind CSS, Node.js, Express, and MongoDB. Features include user registration, JWT-based login with HTTP-only cookies, email verification via OTP, password reset functionality, and protected session handling. This project demonstrates real-world authentication flows, backend security, and frontend-backend integration.",
+    stack: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "bcrypt",
+      "Nodemailer",
+      "Responsive Design",
+    ],
     link: "https://login-page-liard-ten.vercel.app",
   },
 ];
