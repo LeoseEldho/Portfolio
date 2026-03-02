@@ -1,3 +1,4 @@
+import aboutImage from '../assets/myPhoto/about-image.png'
 const About = () => {
   return (
     <section id="about" className=" px-6 md:px-20 lg:pb-20">
@@ -10,7 +11,7 @@ const About = () => {
         <p className="mt-5 text-lg text-gray-400 leading-relaxed">I focus on building modern, responsive, and performance-driven user interfaces that feel smooth, clean, and enjoyable to use.</p>
         </div>
     {/* image  */}
-       <img className="hidden md:block w-full h-full object-cover" src="src\assets\myPhoto\about-image.png" alt="" />
+       <img className="hidden md:block w-full h-full object-cover" src={aboutImage} alt="About image" />
       </div>
     </section>
   );
