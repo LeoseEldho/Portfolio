@@ -14,7 +14,7 @@ const Experience = () => {
               </p>
             </div>
 
-            <p className="text-gray-700 dark:text-gray-400 leading-relaxed sm:mt-5">
+            <p className="text-gray-400 leading-relaxed sm:mt-5">
               Worked as a Fullstack Developer Intern, where I contributed to
               building and maintaining scalable web applications using the MERN
               stack. Focused on both frontend and backend development, and

@@ -1,6 +1,8 @@
 import { details } from "../constants";
 
+
 const Details = () => {
+
   return (
     <section className="px-6 py-20  min-h-screen lg:py-30">
       <h2 className="uppercase text-6xl md:text-9xl text-gray-200 font-bold text-center mb-16">
@@ -9,8 +11,10 @@ const Details = () => {
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {/* Map Details */}
         {details.map((x, ind) => (
+          <a href={`#${x.id}`}>
           <div
             key={ind}
+           
             className="group relative cursor-pointer rounded-3xl p-10 overflow-hidden
   bg-linear-to-br from-white/20 via-white/10 to-white/5
   backdrop-blur-2xl backdrop-saturate-150
@@ -53,15 +57,16 @@ const Details = () => {
             ></span>
 
             <div className="relative z-10">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+              <h3 className="text-xl font-semibold text-white">
                 {x.title}
               </h3>
-              <p className="mt-1 text-sm text-gray-700 dark:text-gray-300">
+              <p className="mt-1 text-sm text-gray-300">
                 {x.click}
               </p>
-              <div className="hidden lg:block mt-6 h-0.5 w-10 bg-gray-900 dark:bg-gray-200 transition-all duration-300 group-hover:w-full"></div>
+              <div className="hidden lg:block mt-6 h-0.5 w-10 bg-gray-200 transition-all duration-300 group-hover:w-full"></div>
             </div>
-          </div>
+          
+          </div></a>
         ))}
       </div>
     </section>
