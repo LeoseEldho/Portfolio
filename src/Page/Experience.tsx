@@ -9,7 +9,7 @@ const Experience = () => {
         </h2>
         <div className="group relative p-10 rounded-3xl bg-gray-800 shadow-lg overflow-hidden transition-all duration-300 opacity-100 scale-100">
           <div className="relative z-10 space-y-4">
-            <div className="flex justify-between items-center gap-6">
+            <div className="flex justify-between items-center gap-6 -ml-3.5 sm:ml-0">
               <img src={vonnue} alt="vonnue" />
               <p className="  font-semibold text-gray-200 text-2xl sm:text-4xl md:text-6xl">
                 Fullstack Developer Intern
