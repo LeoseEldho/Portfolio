@@ -12,25 +12,30 @@ const Project = () => {
           {project.map((x) => (
             <div className="rounded-3xl bg-gray-800 transition-all duration-500 translate-y-0 opacity-100 overflow-hidden">
               <div className="h-64 sm:h-72 md:h-80 lg:h-150  transition-transform duration-500 hover:scale-105">
-                <img className="w-full object-cover h-full" src={x.image} alt="" />
+                <img
+                  className="w-full object-cover h-full"
+                  src={x.image}
+                  alt=""
+                />
               </div>
               <div className="p-8 space-y-4">
                 <h3 className="text-2xl font-semibold text-gray-100">
                   {x.name}
                 </h3>
-                <p className="text-gray-400 leading-relaxed">
-                  {x.details}
-                </p>
+                <p className="text-gray-400 leading-relaxed">{x.details}</p>
                 <div className="flex flex-wrap gap-2 pt-2">
                   {/* map */}
-                  {x.stack.map(stack => (
-                    <span className="px-3 py-1 text-sm rounded-full bg-gray-700 text-gray-200">{stack}</span>
+                  {x.stack.map((stack) => (
+                    <span className="px-3 py-1 text-sm rounded-full bg-gray-700 text-gray-200">
+                      {stack}
+                    </span>
                   ))}
-              </div>
-                <button  className="mt-4 flex items-center gap-2 font-medium text-gray-100  transition-all cursor-pointer">
-                  <a href={x.link} target="_blank">View Project</a> <span>→</span>
-                  
-                </button>
+                </div>
+                <a href={x.link} target="_blank">
+                  <button className="mt-4 flex items-center gap-2 font-medium text-gray-100  transition-all cursor-pointer">
+                    View Project <span>→</span>
+                  </button>
+                </a>
               </div>
             </div>
           ))}
