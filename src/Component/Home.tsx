@@ -1,6 +1,6 @@
 import { Typewriter } from "react-simple-typewriter";
 import myPhoto from "../assets/myPhoto/main-image.png";
-import resume from "../assets/Resume/Leose_Resume.pdf";
+import resume from "../assets/Resume/LeoseEldho_Resume.pdf";
 
 const Home = () => {
   return (
