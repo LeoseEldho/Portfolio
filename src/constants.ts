@@ -16,6 +16,7 @@ import movie from "./assets/Project/movie.png";
 import flipkart from "./assets/Project/filpkart.png";
 import loginPage from "./assets/Project/LoginPage.png";
 import whatapp from "./assets/logo/whatsapp-svgrepo-com.png";
+import recipeImage from './assets/Project/Recipe.png'
 
 export const details = [
   {
@@ -190,4 +191,12 @@ export const project = [
     ],
     link: "https://login-page-liard-ten.vercel.app",
   },
+  {
+  image: recipeImage,
+  name: "Food Recipes App",
+  details:
+    "A full-stack recipe management application built using React, TypeScript, Node.js, and Express. The app allows users to register, log in, and manage their own recipes with features like adding, editing, deleting, and marking recipes as favorites. It supports image uploads using multipart form data and displays dynamic content fetched from a REST API. The project is deployed with the frontend on Vercel and the backend on Render, demonstrating real-world deployment, authentication, and CRUD operations with a responsive UI.",
+  stack: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Tailwind CSS", "REST API"],
+  link: "https://food-recipes-gh5z.vercel.app",
+}
 ];
